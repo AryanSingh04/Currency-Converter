@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Currency</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+        <div class="head">
+            <h2>CURRENCY CONVERTER</h2>
+        </div>
+        <div class="main">
+            <div class="result">
+               <p>Total Amount</p>
+               <h1 id="rate">0</h1>
+            </div>
+            <div class="input">
+                <div class="cur-in">
+                    <label for="amount">Amount</label>
+                    <input id="amount" placeholder="1">
+                </div>
+                 <div class="count-in">
+                    <div class="drop-list"> 
+                        <img src="https://www.countryflagicons.com/FLAT/64/US.png">
+                        <select name="from" id="from-c" class="list">
+                        </select>
+                        
+                    </div>
+                  
+                    <img src="https://th.bing.com/th/id/OIP.vcsd02px2X8VOwDHL4NJ8AHaEC?pid=ImgDet&rs=1" alt="">
+                    
+                    <div class="drop-list">
+                        <img src="https://www.countryflagicons.com/FLAT/64/IN.png">
+                        <select name="to" id="to-c" class="list">
+                        </select>
+                    
+                 </div>
+            </div>
+            <div class="convert">
+                <p></p>
+                <button id="button">CONVERT</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="./country.js"></script>
+    <script src="./script.js">
+    </script>
+</body>
+</html>

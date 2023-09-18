@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+   
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(55, 96, 173);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    width: 50%;
+    max-width: 500px;
+    min-width: 250px;
+    height: 70%;
+    max-height: 1000px;
+    min-height: 300px;
+    border-radius: 5%;
+    /* overflow: hidden; */
+}
+.head{
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 20px;
+height: 10%;
+background-color: rgb(201, 143, 255);
+}
+.main{
+    height: 90%;
+    background-color: rgb(255, 255, 255);
+}
+.result{
+    height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+.input{
+  
+    height: 60%;
+    padding: 0% 5%;
+    margin: 0% 5%;
+}
+.cur-in{
+justify-content: center;
+display: flex;  
+flex-direction: column;
+height: 30%;
+}
+.cur-in input{
+  width: 100%;
+  font-size: large;
+  padding-left:2%;
+ border-radius: 3px;
+ height: 40px;
+}
+label{
+   color: rgb(44, 43, 43);
+}
+.drop-list img{
+    display: block;
+   width: 40px;
+ 
+}
+.count-in{
+    
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.convert{
+    height: 20%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.convert button{
+    padding: 2% 5%;
+    font-size: medium;
+    border: none;
+    background-color: rgb(201, 143, 255);
+    cursor: pointer;
+}
+.convert button:hover{
+    transition: all .1s;
+    background-color: rgb(193, 127, 254);
+}
+.count-in >img{
+    padding: 2%;
+    border: 1px solid black;
+    height: 10%;
+    mix-blend-mode: multiply;
+}
+.drop-list{
+    position: relative;
+    display: flex;
+    width: max-content;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+}
+select{
+    font-size: medium;
+    border: none;
+   outline: none;
+    width: max-content; 
+}
+
+@media (width<768px){
+  .head{
+    font-size: 10px;
+  }
+}
+
