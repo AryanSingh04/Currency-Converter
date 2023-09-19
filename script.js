@@ -16,8 +16,9 @@ function country(){
              list[i].innerHTML=opt;
 
     }
+
     list[i].addEventListener("change",function(e){
-      api()
+     
       for(currency_list in country_list){
         if(e.target.value == currency_list)
         {
@@ -55,3 +56,13 @@ function fun(){
   })
 }
 fun()
+let swap=document.getElementById("swap")
+  swap.addEventListener("click",function(){
+      let temp=list[0].value;
+      list[0].value=list[1].value  ; 
+      list[1].value=temp;
+      let timg=list[0].parentElement.getElementsByTagName("img")[0].src;
+      list[0].parentElement.getElementsByTagName("img")[0].src=list[1].parentElement.getElementsByTagName("img")[0].src;
+      list[1].parentElement.getElementsByTagName("img")[0].src=timg
+     
+  })
