@@ -22,9 +22,9 @@ function country(){
       for(currency_list in country_list){
         if(e.target.value == currency_list)
         {
-      let flag=country_list[currency_list]
+      let flag=country_list[currency_list].toLowerCase()
       let img=list[i].parentElement.getElementsByTagName("img")[0];;
-      img.src=`https://www.countryflagicons.com/FLAT/64/${flag}.png`
+      img.src=`https://flagcdn.com/48x36/${flag}.png`
       }
    } })}
 }
