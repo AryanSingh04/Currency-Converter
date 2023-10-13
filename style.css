@@ -13,9 +13,8 @@
     justify-content: center;
 }
 .box{
-    width: 50%;
-    max-width: 500px;
-    min-width: 250px;
+    width: 80%;
+    max-width: 400px;
     height: 70%;
     max-height: 1000px;
     min-height: 300px;
@@ -40,10 +39,8 @@ background-color: rgb(201, 143, 255);
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
 }
 .input{
-  
     height: 60%;
     padding: 0% 5%;
     margin: 0% 5%;
@@ -67,10 +64,8 @@ label{
 .drop-list img{
     display: block;
    width: 40px;
- 
 }
-.count-in{
-    
+.count-in{  
     height: 50%;
     display: flex;
     align-items: center;
@@ -113,7 +108,9 @@ select{
    outline: none;
     width: max-content; 
 }
-
+#swap{
+    cursor: pointer;
+}
 @media (width<768px){
   .head{
     font-size: 10px;
